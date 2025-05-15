@@ -8,6 +8,7 @@ import { Rubik, Sora } from "next/font/google"
 
 import { Toaster } from "@/components/ui/sonner"
 import { validator } from "./session"
+import NavBar from "@/components/Navigation/NavBar"
 
 const fontRubik = Rubik({
   subsets: [],
@@ -40,6 +41,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+		<NavBar />
       <body
         className={`${fontRubik.variable} ${fontSora.variable} ${fontRubik.className} antialiased`}
       >
