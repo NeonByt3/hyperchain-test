@@ -1,6 +1,7 @@
 "use client";
 
-import { FaRocket, FaCogs, FaBolt } from "react-icons/fa";
+import Link from "next/link";
+import { FaRocket, FaCogs, FaBolt, FaLock, FaCodeBranch, FaTools } from "react-icons/fa";
 
 export default function HyperchainReady() {
   return (
@@ -20,6 +21,9 @@ export default function HyperchainReady() {
             <p className="text-sm text-gray-400">
               Designed for low-latency execution in high-throughput environments.
             </p>
+            <Link href="/blazing" className="text-green-400 hover:underline mt-2 block">
+              Explore Blazing Fast
+            </Link>
           </div>
 
           <div className="bg-gray-900 p-6 rounded-2xl shadow-md hover:shadow-green-400 transition">
@@ -28,6 +32,9 @@ export default function HyperchainReady() {
             <p className="text-sm text-gray-400">
               Easily integrated into any L2/L3 stack thanks to modular architecture.
             </p>
+            <Link href="/modular" className="text-green-400 hover:underline mt-2 block">
+              Explore Modular Hyperchains
+            </Link>
           </div>
 
           <div className="bg-gray-900 p-6 rounded-2xl shadow-md hover:shadow-green-400 transition">
@@ -36,6 +43,42 @@ export default function HyperchainReady() {
             <p className="text-sm text-gray-400">
               Built with futureproof zero-knowledge tech to ensure verifiability at scale.
             </p>
+            <Link href="/zkproof" className="text-green-400 hover:underline mt-2 block">
+              Explore ZK-Proof Compatibility
+            </Link>
+          </div>
+
+          <div className="bg-gray-900 p-6 rounded-2xl shadow-md hover:shadow-green-400 transition">
+            <FaLock className="text-green-400 text-4xl mb-4 mx-auto" />
+            <h3 className="text-xl font-semibold mb-2">Secure by Default</h3>
+            <p className="text-sm text-gray-400">
+              All operations adhere to strict security principles to protect identity and data.
+            </p>
+            <Link href="/secure" className="text-green-400 hover:underline mt-2 block">
+              Explore Security Features
+            </Link>
+          </div>
+
+          <div className="bg-gray-900 p-6 rounded-2xl shadow-md hover:shadow-green-400 transition">
+            <FaCodeBranch className="text-green-400 text-4xl mb-4 mx-auto" />
+            <h3 className="text-xl font-semibold mb-2">Interoperable</h3>
+            <p className="text-sm text-gray-400">
+              Works seamlessly across chains and layers with robust signal propagation.
+            </p>
+            <Link href="/interoperable" className="text-green-400 hover:underline mt-2 block">
+              Explore Interoperability
+            </Link>
+          </div>
+
+          <div className="bg-gray-900 p-6 rounded-2xl shadow-md hover:shadow-green-400 transition">
+            <FaTools className="text-green-400 text-4xl mb-4 mx-auto" />
+            <h3 className="text-xl font-semibold mb-2">Developer Friendly</h3>
+            <p className="text-sm text-gray-400">
+              Clear docs, tooling, and support for quick integration in your stack.
+            </p>
+            <Link href="/developer" className="text-green-400 hover:underline mt-2 block">
+              Explore Dev Tooling
+            </Link>
           </div>
         </div>
       </div>
